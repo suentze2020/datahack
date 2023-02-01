@@ -1,0 +1,77 @@
+body {
+	background-color: grey; /* desktop color */
+	/* font-family: 'Fuzzy Bubbles', cursive; */
+}
+.showview {
+	display: flex;
+	align-items: center;     /* center vertically */
+	justify-content: center; /* center horizontally */
+	height:100vh;            /* height of display */
+}
+
+.desktop{
+	display:block;
+}
+.laptop {
+	display:none;
+}
+.tablet {
+	display:none;
+}
+.mobile {
+	display:none;
+}
+
+@media screen and (max-width: 1280px) {
+	body {
+		background-color: red; /* laptop color */
+	}
+	.desktop{
+		display:none;
+	}
+	.laptop {
+		display:block;
+	}
+	.tablet {
+		display:none;
+	}
+	.mobile {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		background-color: orange; /* tablet color */
+	}
+	.desktop{
+		display:none;
+	}
+	.laptop {
+		display:none;
+	}
+	.tablet {
+		display:block;
+	}
+	.mobile {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-color: yellow; /* mobile color */
+	}
+	.desktop{
+		display:none;
+	}
+	.laptop {
+		display:none;
+	}
+	.tablet {
+		display:none;
+	}
+	.mobile {
+		display:block;
+	}
+}
