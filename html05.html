@@ -18,44 +18,46 @@
         padding: 0;
       } */
 
-      /* body {
+      body {
         margin: 0;
         padding: 0;
-      } */
+        font-family: "Roboto", sans-serif;
+      }
 
-      /* nav ul {
+      nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
-      } */
+      }
 
-      /* nav ul li a {
+      nav ul li a {
         color: #555;
         padding: 12px;
         background-color: #f5ecce;
         text-decoration: none;
-      } */
-
-      /* nav ul li a:hover {
-        background-color: #555;
-        color: #f5ecce;
-      } */
-
-      .container {
-        font-family: "Roboto", sans-serif;
       }
 
-      /* .container {
+      nav ul li a:hover {
+        background-color: #555;
+        color: #f5ecce;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .container#navbar {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
         width: 100%;
         background-color: #f5ecce;
-      } */
+      }
 
       .box-1 {
         background-color: green;
@@ -77,7 +79,7 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="navbar">
       <nav>
         <ul>
           <li><a href="#">Work</a></li>
@@ -86,6 +88,8 @@
           <li><a href="#">Blog</a></li>
         </ul>
       </nav>
+    </div>
+    <div class="container">
       <div class="box box-1">
         <!-- Apply multple class selectors to target div combining box and box-1 classes. -->
         Box 1
